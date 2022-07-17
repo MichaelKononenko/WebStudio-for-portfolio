@@ -1,0 +1,46 @@
+.portfolio {
+  padding: 60px 0;
+  @media screen and (min-width: $desktop-width) {
+    padding: 94px 0;
+  }
+
+  &__nav {
+    display: flex;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 15px 8px;
+    @media screen and (min-width: $tablet-width) {
+      justify-content: center;
+    }
+    @media screen and (min-width: $desktop-width) {
+      margin-bottom: 50px;
+    }
+  }
+  &__button {
+    padding: 6px 22px;
+    height: 38px;
+    border-radius: 4px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    background-color: var(--nav-button-backgroud-color);
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: color var(--primary-transition-time) var(--primary-cubic-function),
+      background-color var(--primary-transition-time) var(--primary-cubic-function),
+      box-shadow var(--primary-transition-time) var(--primary-cubic-function);
+    &:hover,
+    &:focus {
+      box-shadow: var(--page-nav-shadow-set);
+      background-color: var(--action-color);
+      color: var(--primary-background-color);
+    }
+    &--current {
+      box-shadow: var(--page-nav-shadow-set);
+      background-color: var(--action-color);
+      color: var(--primary-background-color);
+    }
+  }
+}

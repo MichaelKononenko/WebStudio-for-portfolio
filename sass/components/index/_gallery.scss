@@ -1,0 +1,38 @@
+.gallery {
+  display: none;
+  padding-bottom: 94px;
+  @media screen and (min-width: $desktop-width) {
+    display: flex;
+  }
+  &__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.67;
+    text-align: center;
+  }
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+  &__item {
+    position: relative;
+  }
+  &__image {
+    max-width: 100%;
+  }
+  &__description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--primary-background-color);
+    background-color: var(--galery-overlay-color);
+  }
+}

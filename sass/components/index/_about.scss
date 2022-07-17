@@ -1,0 +1,43 @@
+.about {
+  padding: 60px 0;
+  @media screen and (min-width: $desktop-width) {
+    padding: 94px 0;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  &__item {
+    @media screen and (min-width: $tablet-width) {
+      width: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: $desktop-width) {
+      width: calc((100% - 90px) / 4);
+    }
+  }
+  &__icon-wrapper {
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--nav-button-backgroud-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  &__title {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    @media screen and (min-width: $tablet-width) {
+      text-align: left;
+    }
+  }
+  &__description {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--secondary-text-color);
+  }
+}
